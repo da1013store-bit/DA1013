@@ -1,3 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DA1013 | Vinted</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #262626;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: 3px;
+    }
+
+    .vinted-top {
+      text-decoration: none;
+      color: white;
+      border: 1px solid #444;
+      padding: 9px 15px;
+      border-radius: 50px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 70px 8%;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #1b1b1b;
+      border: 1px solid #333;
+      padding: 7px 14px;
+      border-radius: 30px;
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 10vw, 80px);
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      color: #aaa;
+      font-size: 18px;
+      max-width: 550px;
+      margin: auto;
+    }
+
+    .buttons {
+      margin-top: 35px;
+    }
+
+    .main-button {
+      display: inline-block;
+      text-decoration: none;
+      color: #000;
+      background: white;
+      padding: 15px 27px;
+      border-radius: 50px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 70px 8%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #888;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: #151515;
+      border: 1px solid #282828;
+      border-radius: 18px;
+      padding: 28px;
+    }
+
+    .number {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #999;
+      font-size: 14px;
+    }
+
+    .catalog {
+      background: #151515;
+      border: 1px solid #282828;
+      border-radius: 24px;
+      padding: 45px 30px;
+      text-align: center;
+    }
+
+    .catalog h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .catalog p {
+      color: #999;
+      max-width: 600px;
+      margin: 0 auto 25px;
+    }
+
+    .about {
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 650px;
+      margin: auto;
+      color: #999;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 30px 8%;
+      border-top: 1px solid #262626;
+      text-align: center;
+      color: #666;
+      font-size: 13px;
+    }
+
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+    }
+
+    @media (max-width: 700px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 65vh;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .section {
+        padding: 55px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">DA1013</div>
+
+  <a
+    class="vinted-top"
+    href="https://www.vinted.pt/member/3167806445-diogo1406by"
+    target="_blank"
+  >
+    Vinted ↗
+  </a>
+</header>
+
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="tag">
+      DA1013 • VINTED
+    </div>
+
+    <h1>
+      O teu próximo<br>
+      achado está aqui.
+    </h1>
+
+    <p>
+      Descobre os artigos disponíveis na DA1013.
+      Vê o catálogo e compra diretamente através da Vinted.
+    </p>
+
+    <div class="buttons">
+
+      <a
+        class="main-button"
+        href="https://www.vinted.pt/member/3167806445-diogo1406by"
+        target="_blank"
+      >
+        Ver artigos na Vinted →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="section">
+
+  <div class="section-title">
+
+    <h2>Simples e seguro.</h2>
+
+    <p>
+      Encontra aqui os artigos e finaliza a compra através da Vinted.
+    </p>
+
+  </div>
+
+
+  <div class="cards">
+
+    <div class="card">
+
+      <div class="number">01</div>
+
+      <h3>Descobre</h3>
+
+      <p>
+        Explora os artigos disponíveis e encontra algo para ti.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="number">02</div>
+
+      <h3>Escolhe</h3>
+
+      <p>
+        Consulta as fotografias, descrição e preço de cada artigo.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="number">03</div>
+
+      <h3>Compra</h3>
+
+      <p>
+        A compra é finalizada diretamente através da plataforma Vinted.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="section">
+
+  <div class="catalog">
+
+    <h2>Explora a DA1013</h2>
+
+    <p>
+      O catálogo é atualizado à medida que novos artigos ficam disponíveis.
+      Consulta a página da Vinted para veres tudo o que está atualmente à venda.
+    </p>
+
+    <a
+      class="main-button"
+      href="https://www.vinted.pt/member/3167806445-diogo1406by"
+      target="_blank"
+    >
+      Abrir catálogo →
+    </a>
+
+  </div>
+
+</section>
+
+
+<section class="section about">
+
+  <div class="section-title">
+
+    <h2>DA1013</h2>
+
+  </div>
+
+  <p>
+    Uma montra criada para apresentar de forma simples e organizada
+    os meus artigos disponíveis na Vinted.
+  </p>
+
+</section>
+
+
+<footer>
+
+  <p>
+    © <span id="year"></span> DA1013 •
+    <a
+      href="https://www.vinted.pt/member/3167806445-diogo1406by"
+      target="_blank"
+    >
+      Vinted
+    </a>
+  </p>
+
+</footer>
+
+
+<script>
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
+
 ┌─────────────────────────────────┐
 │        DA1013 STORE 🛍️          │
 │                                 │
