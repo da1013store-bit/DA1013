@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>DA1013</title>
+  <title>DA1013 Store</title>
 
   <style>
     * {
@@ -32,6 +32,8 @@
       color: #d9a35f;
     }
 
+    /* HEADER */
+
     header {
       position: absolute;
       top: 0;
@@ -40,14 +42,16 @@
       z-index: 10;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      padding: 24px 7%;
+      align-items: flex-start;
+      padding: 22px 7%;
     }
 
-    .logo {
-      font-size: 28px;
-      font-weight: 800;
-      letter-spacing: 5px;
+    .logo img {
+      width: 125px;
+      height: 125px;
+      object-fit: contain;
+      border-radius: 50%;
+      display: block;
     }
 
     .top-button {
@@ -57,14 +61,17 @@
       font-size: 13px;
       font-weight: 700;
       letter-spacing: 1px;
+      margin-top: 12px;
     }
+
+    /* HERO */
 
     .hero {
       min-height: 100vh;
       position: relative;
       display: flex;
       align-items: center;
-      padding: 120px 7% 70px;
+      padding: 150px 7% 70px;
       overflow: hidden;
 
       background:
@@ -133,6 +140,8 @@
       font-weight: 700;
     }
 
+    /* SECTIONS */
+
     section {
       padding: 80px 7%;
     }
@@ -162,6 +171,8 @@
       font-size: 17px;
     }
 
+    /* PRODUCTS */
+
     .products {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -189,6 +200,7 @@
       position: absolute;
       top: 12px;
       left: 12px;
+      z-index: 2;
       background: #111;
       border: 1px solid #d9a35f;
       color: #d9a35f;
@@ -238,6 +250,8 @@
       margin-top: 35px;
     }
 
+    /* BENEFITS */
+
     .benefits {
       background: #111;
     }
@@ -261,6 +275,7 @@
     .benefit-icon {
       font-size: 30px;
       margin-bottom: 14px;
+      color: #d9a35f;
     }
 
     .benefit h3 {
@@ -273,6 +288,8 @@
       font-size: 14px;
       line-height: 1.5;
     }
+
+    /* ABOUT */
 
     .about-box {
       max-width: 850px;
@@ -295,6 +312,8 @@
       font-size: 17px;
     }
 
+    /* SOCIAL */
+
     .social {
       text-align: center;
       background: #101010;
@@ -309,6 +328,8 @@
       color: #d9a35f;
       font-weight: 700;
     }
+
+    /* FINAL CTA */
 
     .final-cta {
       text-align: center;
@@ -339,6 +360,8 @@
       color: #d9a35f;
     }
 
+    /* TABLET */
+
     @media (max-width: 900px) {
       .products {
         grid-template-columns: repeat(2, 1fr);
@@ -349,24 +372,29 @@
       }
     }
 
+    /* MOBILE */
+
     @media (max-width: 620px) {
+
       header {
-        padding: 20px 5%;
+        padding: 18px 5%;
+        align-items: flex-start;
       }
 
-      .logo {
-        font-size: 22px;
-        letter-spacing: 4px;
+      .logo img {
+        width: 105px;
+        height: 105px;
       }
 
       .top-button {
         font-size: 11px;
-        padding: 9px 13px;
+        padding: 10px 14px;
+        margin-top: 10px;
       }
 
       .hero {
         min-height: 100vh;
-        padding: 125px 6% 60px;
+        padding: 145px 6% 60px;
 
         background:
           linear-gradient(
@@ -419,7 +447,13 @@
 <body>
 
   <header>
-    <div class="logo">DA1013</div>
+
+    <a class="logo" href="#">
+      <img
+        src="file_00000000168c81f4abeb086f0b626cc9.png"
+        alt="DA1013 Store"
+      >
+    </a>
 
     <a
       class="top-button"
@@ -428,6 +462,7 @@
     >
       VER NA VINTED
     </a>
+
   </header>
 
 
@@ -449,10 +484,7 @@
 
       <div class="hero-buttons">
 
-        <a
-          class="button-primary"
-          href="#destaques"
-        >
+        <a class="button-primary" href="#destaques">
           EXPLORAR ARTIGOS →
         </a>
 
@@ -494,11 +526,11 @@
 
     <div class="products">
 
+      <!-- COLUNA -->
+
       <div class="product-card">
 
-        <div class="badge">
-          DESTAQUE
-        </div>
+        <div class="badge">DESTAQUE</div>
 
         <img
           src="IMG_20260807_163056.jpg"
@@ -508,17 +540,13 @@
 
         <div class="product-info">
 
-          <h3>
-            Coluna Bluetooth
-          </h3>
+          <h3>Coluna Bluetooth</h3>
 
           <div class="product-meta">
             Tecnologia
           </div>
 
-          <div class="price">
-            10 €
-          </div>
+          <div class="price">10 €</div>
 
           <a
             class="product-button"
@@ -529,54 +557,14 @@
           </a>
 
         </div>
-
       </div>
 
 
-      <div class="product-card">
-
-        <div class="badge">
-          DESTAQUE
-        </div>
-
-        <img
-          src="IMG_20260814_214211.jpg"
-          class="product-image"
-          alt="T-shirt estampada XXL"
-        >
-
-        <div class="product-info">
-
-          <h3>
-            T-shirt Estampada
-          </h3>
-
-          <div class="product-meta">
-            Tamanho XXL
-          </div>
-
-          <div class="price">
-            5 €
-          </div>
-
-          <a
-            class="product-button"
-            href="https://www.vinted.pt/items/9664015105-t-shirt-nilon"
-            target="_blank"
-          >
-            VER NA VINTED ↗
-          </a>
-
-        </div>
-
-      </div>
-
+      <!-- CHICAGO BULLS -->
 
       <div class="product-card">
 
-        <div class="badge">
-          DESTAQUE
-        </div>
+        <div class="badge">DESTAQUE</div>
 
         <img
           src="IMG_20260814_214324.jpg"
@@ -586,17 +574,13 @@
 
         <div class="product-info">
 
-          <h3>
-            T-shirt Chicago Bulls
-          </h3>
+          <h3>T-shirt Chicago Bulls</h3>
 
           <div class="product-meta">
             Tamanho XL
           </div>
 
-          <div class="price">
-            5 €
-          </div>
+          <div class="price">5 €</div>
 
           <a
             class="product-button"
@@ -607,15 +591,14 @@
           </a>
 
         </div>
-
       </div>
 
 
+      <!-- TUPAC -->
+
       <div class="product-card">
 
-        <div class="badge">
-          DESTAQUE
-        </div>
+        <div class="badge">DESTAQUE</div>
 
         <img
           src="IMG_20260814_214031.jpg"
@@ -625,17 +608,13 @@
 
         <div class="product-info">
 
-          <h3>
-            T-shirt Tupac
-          </h3>
+          <h3>T-shirt Tupac</h3>
 
           <div class="product-meta">
             Tamanho XL
           </div>
 
-          <div class="price">
-            5 €
-          </div>
+          <div class="price">5 €</div>
 
           <a
             class="product-button"
@@ -646,7 +625,40 @@
           </a>
 
         </div>
+      </div>
 
+
+      <!-- NOVA T-SHIRT -->
+
+      <div class="product-card">
+
+        <div class="badge">DESTAQUE</div>
+
+        <img
+          src="IMG_20260814_214211.jpg"
+          class="product-image"
+          alt="T-shirt estampada"
+        >
+
+        <div class="product-info">
+
+          <h3>T-shirt Estampada</h3>
+
+          <div class="product-meta">
+            Tamanho XXL
+          </div>
+
+          <div class="price">5 €</div>
+
+          <a
+            class="product-button"
+            href="https://www.vinted.pt/items/9664015105-t-shirt-nilon"
+            target="_blank"
+          >
+            VER NA VINTED ↗
+          </a>
+
+        </div>
       </div>
 
     </div>
@@ -685,70 +697,27 @@
     <div class="benefit-grid">
 
       <div class="benefit">
-
-        <div class="benefit-icon">
-          ✓
-        </div>
-
-        <h3>
-          Artigos reais
-        </h3>
-
-        <p>
-          Fotografias reais dos artigos que tenho disponíveis.
-        </p>
-
+        <div class="benefit-icon">✓</div>
+        <h3>Artigos reais</h3>
+        <p>Fotografias reais dos artigos que tenho disponíveis.</p>
       </div>
 
-
       <div class="benefit">
-
-        <div class="benefit-icon">
-          €
-        </div>
-
-        <h3>
-          Bons preços
-        </h3>
-
-        <p>
-          Oportunidades para quem procura bons achados.
-        </p>
-
+        <div class="benefit-icon">€</div>
+        <h3>Bons preços</h3>
+        <p>Oportunidades para quem procura bons achados.</p>
       </div>
 
-
       <div class="benefit">
-
-        <div class="benefit-icon">
-          ↗
-        </div>
-
-        <h3>
-          Compra na Vinted
-        </h3>
-
-        <p>
-          Cada artigo leva diretamente ao respetivo anúncio.
-        </p>
-
+        <div class="benefit-icon">↗</div>
+        <h3>Compra na Vinted</h3>
+        <p>Cada artigo leva diretamente ao respetivo anúncio.</p>
       </div>
 
-
       <div class="benefit">
-
-        <div class="benefit-icon">
-          ♡
-        </div>
-
-        <h3>
-          Atenção aos detalhes
-        </h3>
-
-        <p>
-          Quero tornar simples a descoberta de cada artigo.
-        </p>
-
+        <div class="benefit-icon">♡</div>
+        <h3>Atenção aos detalhes</h3>
+        <p>Quero tornar simples a descoberta de cada artigo.</p>
       </div>
 
     </div>
@@ -764,9 +733,7 @@
         SOBRE
       </div>
 
-      <h2>
-        Sobre a DA1013
-      </h2>
+      <h2>Sobre a DA1013</h2>
 
       <p>
         Mais do que vender, quero dar uma nova vida a boas peças.
@@ -838,6 +805,7 @@
   <footer>
 
     © <span id="year"></span> DA1013 •
+
     <a
       href="https://www.instagram.com/da1013store?igsi=MXF0ZXF6eHhzZnkyMQ=="
       target="_blank"
